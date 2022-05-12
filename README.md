@@ -1,4 +1,4 @@
-# Django-appointment-and-booking-system
+# Booking appointment system
 A  python prototype Django project for booking and appointment for Teacher and Student.
 
 #This  web application has several important features :

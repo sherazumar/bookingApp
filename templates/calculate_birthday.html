@@ -1,0 +1,51 @@
+{% extends 'common_student.html' %}
+
+{% block common_student %}
+
+   <div class="student">
+           <div class="container">
+          <div class="row min-height">
+              <div class="col-sm-12">
+                   
+                
+                <form method="post" class="mt-4">
+                    {% csrf_token %}
+                    <label for="birth_date">Select your date of Birth...</label>
+                    <input placeholder="Select date" type="date" name="date"
+                        id="birth_date" class="form-control">
+    
+                    <div class="text-center">
+                        <input id="calculate" type="submit"
+                            class="btn btn-success mt-3" name="Get Birthday"
+                            value="Calculate your age">
+                    </div>
+                </form>
+
+                <div id="age_container" class="p-4 text-dark">
+                    <p id="exact_age" class="display-6 text-center">{{age}}</p>
+                </div>
+                            
+                                                                                             
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+      <div class="footer">
+           <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+
+
+    
+{% endblock common_student %}
+
+
+

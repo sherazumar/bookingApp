@@ -1,0 +1,61 @@
+{% extends 'common_student.html' %}
+
+{% block common_student %}
+
+   <div class="student">
+           <div class="container">
+          <div class="row min-height">
+              <div class="col-sm-12">
+                     
+                
+                <!-- START input form -->
+            <form method="post" class="mt-4">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-6">
+                        <label for="date-range-start-date">Start
+                            date</label>
+                        <input type="date" name="sdate"
+                            id="date-range-start-date" class="form-control">
+                        
+                    </div>
+                    <div class="col-6">
+                        <label for="date-range-end-date">End
+                            date</label>
+                        <input type="date" name="edate" id="date-range-end-date"
+                            class="form-control">
+                        
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <input id="calculate" type="submit"
+                        class="btn btn-success mt-3" name="submit"
+                        value="Show range">
+                </div>
+            </form>
+            <!-- END input form -->
+
+            <!-- START result container -->
+            <div id="age_container" class="p-4 text-dark">
+                <p id="exact_age" class="display-6 text-center">{{age}}</p>
+            </div>
+
+                                                                                             
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+      <div class="footer">
+           <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+{% endblock common_student %}

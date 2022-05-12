@@ -15,12 +15,12 @@ A  python prototype Django project for booking and appointment for Teacher and S
 
 
 Deployment:
-####################################
-To run this project in localhost , we have to set up python, pip, virtualenv and django.
-1. Run Windows Powershell as Administrator
-2. pip install virtualenv
-3. virtualenv .
-4. Scripts\activate or scripts\activate
-5. pipenv install django /pip install django
-6. python .\manage.py runserver
 
+To run this project, we have to set up python3, pip3, virtualenv and django.
+1. Run Terminal and install python3.
+2. brew install pip3.
+3. brew install django.
+4. brew install virtualenv.
+5. virtualenv .
+6. Scripts\activate or scripts\activate
+7. python .\manage.py runserver
